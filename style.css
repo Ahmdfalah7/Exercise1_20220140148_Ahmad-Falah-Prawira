@@ -1,0 +1,96 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  background-color: beige;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #335539;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: auto;
+  color: #335539; /* Warna teks h1 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: khaki;
+  color: #335539; 
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.container {
+  border-radius: 20px;
+  width: 80%; /* Ubah lebar kontainer menjadi 80% dari lebar layar */
+  max-width: 1000px; /* Batasi lebar maksimum kontainer */
+  border: 4px dashed rgb(51, 85, 59);
+  padding: 50px;
+  margin: 50px auto; /* Tambahkan jarak dari atas dan bawah */
+  overflow: hidden;
+}
+
+.kanan {
+  margin-bottom: 30px; /* Ubah margin-bottom ke pixel */
+}
+
+.kiri {
+  margin-top: -30px; /* Ubah margin-top ke pixel */
+}
+
+.kiri p,
+.kanan p {
+  text-indent: 1rem;
+}
+
+.gambar-kiri,
+.gambar-kanan {
+  border-radius: 12px;
+  border: 7px solid grey(164, 29, 182, 0.44); /* Ubah opasitas warna border */
+  max-width: 50%; /* Ubah ukuran gambar agar tetap responsif */
+  display: block;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease; /* Transisi warna border */
+}
+
+.gambar-kiri:hover,
+.gambar-kanan:hover {
+  border-color: #ffbf00; /* Warna border saat dihover */
+}
+
+.gambar-kiri {
+  border-radius: 12px;
+  border: 7px solid khaki;
+  float: left;
+  max-width: 50%;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+
+
+.gambar-kanan {
+  border-radius: 12px;
+  border: 7px solid khaki;
+  float: right;
+  max-width: 50%;
+
+}
+
+.folder {
+  display: flex;
+  justify-content: center; /* Pusatkan gambar di dalam folder */
+}
